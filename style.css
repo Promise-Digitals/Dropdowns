@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    cursor: default;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/pexels-photo-796602.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    background: rgb(0, 100, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+nav > ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 15px;
+    padding: 15px;
+    transition: 0.5s;
+}
+nav ul li:hover{
+    background: #2bab0d;
+}
+.active {
+    background: #2bab0d;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a i{
+    margin-right: 8px;
+}
+/*styling for aboutdrop*/
+.about-drop{
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    display: none;
+}
+.about-drop ul li{
+    display: block;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    padding: 15px 20px 0 0;
+    transition: 0.5s;
+}
+.about-drop ul li:last-child{
+    border-bottom: none;
+}
+.about-drop ul li:hover{
+    background: none;
+}
+.about-drop ul li:hover a {
+    color: #2bab0d;
+}
+.about:hover .about-drop{
+    display: block;
+}
+/*styling for services dropdown*/
+.services-drop {
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    display: none;
+}
+
+.services-drop ul li {
+    display: block;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    padding: 15px 20px 0 0;
+    transition: 0.5s;
+}
+
+.services-drop ul li:last-child {
+    border-bottom: none;
+}
+
+.services-drop ul li:hover {
+    background: none;
+}
+
+.services ul li:hover a {
+    color: #2bab0d;
+}
+
+.services:hover .services-drop {
+    display: block;
+}
+.services .fa-angle-right {
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    font-size: 14px;
+}
+/*styling for marketing Dropdown*/
+#marketing-drop {
+    position: absolute;
+    background: rgb(0, 100, 0);
+    left: 130px;
+    width: 250px;
+    margin-top: -50px;
+    z-index: 1;
+    display: none;
+}
+#marketing-drop ul li {
+    display: block;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    padding: 15px 20px 0 0;
+    transition: 0.5s;
+}
+#marketing-drop ul li:last-child {
+    border-bottom: none;
+}
+#marketing-drop ul li a {
+    color: white;
+}
+#marketing-drop ul li:hover a{
+    color: #2bab0d;
+}
+.marketing:hover #marketing-drop{
+    display: block;
+}
+.marketing:hover .fa-angle-right {
+    display: none;
+}
+/*styling for Mobile App Dropdown*/
+#mobile-app-drop {
+    position: absolute;
+    background: rgb(0, 100, 0);
+    left: 130px;
+    width: 250px;
+    margin-top: -50px;
+    z-index: 1;
+    display: none;
+}
+
+#mobile-app-drop ul li {
+    display: block;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    padding: 15px 20px 0 0;
+    transition: 0.5s;
+}
+
+#mobile-app-drop ul li:last-child {
+    border-bottom: none;
+}
+
+#mobile-app-drop ul li a {
+    color: white;
+}
+
+#mobile-app-drop ul li:hover a {
+    color: #2bab0d;
+}
+
+.mobile-app:hover #mobile-app-drop {
+    display: block;
+}
+.mobile-app:hover .fa-angle-right {
+    display: none;
+}
+/*styling for Training*/
+.training-dropdown {
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    display: none;
+}
+
+.training-dropdown ul li {
+    display: block;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    padding: 15px 20px 0 0;
+    transition: 0.5s;
+}
+
+.training-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+.training-dropdown ul li:hover {
+    background: none;
+}
+
+.training-dropdown ul li:hover a {
+    color: #2bab0d;
+}
+
+.training:hover .training-dropdown {
+    display: block;
+}
+.training .fa-angle-right {
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    font-size: 14px;
+}
+/*styling for Development dropdown*/
+#dev-dropdown {
+    position: absolute;
+    background: rgb(0, 100, 0);
+    left: 130px;
+    width: 200px;
+    margin-top: -50px;
+    z-index: 1;
+    display: none;
+}
+
+#dev-dropdown ul li {
+    display: block;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    padding: 15px 20px 0 0;
+    transition: 0.5s;
+}
+
+#dev-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+#dev-dropdown ul li a {
+    color: white;
+}
+
+#dev-dropdown ul li:hover a {
+    color: #2bab0d;
+}
+
+.development:hover #dev-dropdown {
+    display: block;
+}
+.development:hover .fa-angle-right {
+    display: none;
+}
+footer p{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: rgb(0, 100, 0);
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0;
+    animation: show 5s linear infinite;
+}
+@keyframes show {
+    100%{
+        opacity: 1;
+    }
+}
+
