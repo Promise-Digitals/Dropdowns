@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: cursive;
     cursor: default;
+    font-size: 15px;
 }
 body{
     width: 100%;
@@ -101,7 +102,7 @@ nav ul li a i{
     color: #fff;
     position: absolute;
     right: 5px;
-    font-size: 14px;
+    font-size: 12px;
 }
 /*styling for marketing Dropdown*/
 #marketing-drop {
