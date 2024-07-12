@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: serif;
     cursor: default;
-    font-size: 15px;
+    font-size: 16px;
 }
 body{
     width: 100%;
@@ -39,7 +39,7 @@ nav ul li a{
     color: #fff;
 }
 nav ul li a i{
-    margin-right: 8px;
+    margin-right: 5px;
 }
 /*styling for aboutdrop*/
 .about-drop{
@@ -253,11 +253,15 @@ footer p{
     right: 5%;
     color: rgb(0, 100, 0);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: serif;
     opacity: 0;
-    animation: show 5s linear infinite;
+    animation: show 10s linear infinite;
 }
 @keyframes show {
+    50%{
+        opacity: 0;
+    }
     100%{
         opacity: 1;
     }
